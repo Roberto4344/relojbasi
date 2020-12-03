@@ -61,12 +61,11 @@ public class PantallaDosDigitos
      * Incrementa el valor de la pantalla. Si llega al limite cambia al valor inicial.
      */
     public void incrementaValorAlmacenado() {
-        int valorIncrementado = valorAlmacenado + 1;
-        if(valorIncrementado > valorLimite){
+        if((valorAlmacenado + 1) > valorLimite){
             valorAlmacenado = valorInicial;
         }
         else{
-        valorAlmacenado = valorAlmacenado + 1;
-    }
+            valorAlmacenado = valorAlmacenado + 1;
+        }
     }
 }
